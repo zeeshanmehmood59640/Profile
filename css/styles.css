@@ -15,8 +15,16 @@
   border-radius: 300px;
 
  }
-
-
+ li{
+  list-style: none;
+  position: relative;
+  box-shadow: 0 0;
+  
+}
+li span{
+  position: absolute;
+  right: 0;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -199,6 +207,9 @@ footer a:hover, footer a:focus ,footer a:active{
 @media (min-width: 992px) {
   #mylogo {
     width: 150px;
+  }
+  li span {
+    right: 25px;
   }
   #services>div>div>div:hover{
     box-shadow: 0 0 5px #61008b ;
@@ -3155,7 +3166,7 @@ fieldset:disabled .btn {
 
 .btn-light {
   --bs-btn-color: #000;
-  --bs-btn-bg: #f8f9fa;
+  --bs-btn-bg: #f3e2f6;
   --bs-btn-border-color: #f8f9fa;
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: #d3d4d5;
