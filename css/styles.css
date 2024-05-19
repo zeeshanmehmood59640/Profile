@@ -136,7 +136,16 @@ hr {
   border-top: 1px solid;
   opacity: 0.25;
 }
-
+footer {
+  background-color: #61008b;
+}
+footer p {
+  color: #faf9e0 !important;
+}
+#services,
+#my-skills {
+  background-color: #faf9e0;
+}
 h6,
 .h6,
 h5,
@@ -11272,7 +11281,7 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .text-white-75 {
