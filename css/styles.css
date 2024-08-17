@@ -10,6 +10,76 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+#test{
+  margin-top:-70px;
+}
+#test h5{
+  color:white!important;
+}
+.frame i.fa-solid {
+  color: #7436ca !important;
+}
+  .wrapper {
+    max-width: 1200px;
+    margin: 4em auto;
+    overflow: hidden;
+  }
+  .buttons {
+    width: 100%;
+    margin: 0 0 1em 0;
+    text-align: right;
+  }
+  .buttons a {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 300%;
+  }
+  .buttons a:first-child {
+    margin: 0 10px 0 0;
+  }
+  .container-st{
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .frame {
+    padding: 20px 0;
+    text-align: center;
+    box-sizing: border-box;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .frame i {
+    font-size: 200%;
+    font-weight: bold;
+    color: #fff;
+  }
+  @media (min-width: 400px) {
+    .frame {
+      min-width: 50%;
+      max-width: 50%;
+    }
+  }
+  @media (min-width: 768px) {
+    .frame {
+      min-width: 33.3333333333%;
+      max-width: 33.3333333333%;
+    }
+  }
+  @media (min-width: 1040px) {
+    .frame {
+      min-width: 25%;
+      max-width: 25%;
+    }
+  }
+  .frame:nth-child(odd) {
+    background-color: #321a51;
+  }
+  .frame:nth-child(even) {
+    background-color: #a790c3;
+  }
+
+
 #my_card img {
   width: 300px;
   border-radius: 300px;
@@ -137,14 +207,18 @@ hr {
   opacity: 0.25;
 }
 footer {
-  background-color: #61008b;
+  background-color: #22033EFF;
 }
 footer p {
   color: #faf9e0 !important;
 }
 #services,
 #my-skills {
-  background-color: #faf9e0;
+  background: rgb(37,16,48);
+  background: linear-gradient(90deg, rgba(37,16,48,1) 0%, rgba(36,17,46,1) 51%, rgba(34,3,62,1) 100%);
+}
+#services h2, #services h3{
+  color: #faf9e0 !important;
 }
 h6,
 .h6,
@@ -168,6 +242,12 @@ h1,
 h1,
 .h1 {
   font-size: calc(1.375rem + 1.5vw);
+}
+h1{
+  color:#b95ae1!important; ;
+}
+#element{
+  color: white!important;
 }
 #mylogo {
   width: 80px;
@@ -221,11 +301,22 @@ footer a:active {
   li span {
     right: 25px;
   }
+  #services > div >div >div{
+
+    border: 2px solid transparent; /* Transparent border for layout */
+    border-image-slice: 2% 10% 62% 70%;
+    border-image-source: linear-gradient(to left, transparent 0%, #d3b2f3, #684e97, #19022c, transparent 25%)
+  }
+
   #services > div > div > div:hover {
     box-shadow: 0 0 5px #61008b;
     transform: translateY(-10px);
     transition: 1s;
+
   }
+}
+#services > div > div > div:hover p{
+  color: white !important;
 }
 @media (min-width: 1200px) {
   h1,
@@ -773,6 +864,9 @@ hr.divider_start {
   }
 }
 @media (min-width: 768px) {
+  #description{
+    text-align: justify!important;
+  }
   #my_card img {
     border-radius: 0;
   }
@@ -11385,7 +11479,7 @@ header.masthead {
       rgba(16, 4, 22, 1) 0%,
       rgba(92, 97, 56, 0.3) 100%
     ),
-    url("../assets/img/asd.jpg");
+    url("../assets/img/b2.png");
   background-position: center right;
   background-repeat: no-repeat;
   background-attachment: scroll;
