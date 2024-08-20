@@ -10,6 +10,23 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+#pills-home-tab{
+  border-radius: 100px 0 0 100px !important;
+}
+#pills-contact-tab{
+  border-radius: 0 100px 100px 0!important;
+}
+#pills-profile-tab{
+  border-radius: 0!important;
+}
+button.nav-link{
+  border: 1px solid #7436ca !important;
+
+}
+.nav-pills .nav-link.active{
+  background: rgb(152,112,173);
+  background: linear-gradient(90deg, rgba(152,112,173,1) 0%, rgba(62,30,79,1) 50%, rgba(47,2,88,1) 100%);
+}
 #test{
   margin-top:-70px;
 }
