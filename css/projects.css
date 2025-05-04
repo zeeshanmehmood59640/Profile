@@ -1,0 +1,40 @@
+body {
+    background: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#mylogo{
+    height: 50px;
+}
+.dark-text{
+    color: #61008B;
+}
+.light-text{
+    color: #b95ae1;
+}
+.dark-bg{
+    background-color: #61008B;
+}
+#nav{
+    background-color: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Tilt Neon", sans-serif;
+}
+.detail {
+    background: linear-gradient(90deg, rgba(152,112,173,1) 0%, rgba(62,30,79,1) 50%, rgba(47,2,88,1) 100%);
+    transition: all 1s ease;
+}
+
+.detail a {
+    color: white !important;
+    transition: color 1s ease;
+}
+
+.detail:hover {
+    background: white;
+    border-color: #61008b !important;
+}
+
+.detail:hover a {
+    color: #61008b !important;
+}

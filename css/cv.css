@@ -1,0 +1,38 @@
+body {
+    background: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .sidebar{
+    padding: 0!important;
+
+  }
+  .sidebar h5 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 6px;
+    color: #ececec;
+  }
+  #cv-pic{
+    height: 150px !important;
+    width: 150px !important;
+  }
+  #cv-sidebar{
+    background:  #61008B; /* or your gradient */
+    border-top-left-radius: 100% 50px;
+    border-top-right-radius: 100% 50px;
+    padding-top: 60px; /* optional for spacing */
+  }
+  .dark{
+    color: #61008B;
+  }
+  #nav{
+    background-color: #fff;
+  }
+  #mylogo{
+    height: 50px;
+  }

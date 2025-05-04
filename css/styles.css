@@ -10,6 +10,57 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.overlay-btn {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card:hover .overlay-btn {
+  opacity: 1;
+}
+.resized{
+  min-height: 175px!important;
+}
+
+.detail {
+  background: linear-gradient(90deg, rgba(152,112,173,1) 0%, rgba(62,30,79,1) 50%, rgba(47,2,88,1) 100%);
+  transition: all 1s ease;
+}
+
+.detail a {
+  color: white !important;
+  transition: color 1s ease;
+}
+
+.detail:hover {
+  background: white;
+  border-color: #61008b !important;
+}
+
+.detail:hover a {
+  color: #61008b !important;
+}
+
 #pills-home-tab{
   border-radius: 100px 0 0 100px !important;
 }
